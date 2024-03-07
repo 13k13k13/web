@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat;
+    padding: 10px; 
+    font-size:1em;
+    line-height:24px;
+    background-color: #ffdab9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.encabezado{
+    /*background-image: url("fondo.jpg");*/
+   /* background-repeat: no-repeat;*/
+  /*  background-attachment: fixed;
+    background-size:100% 24%;*/
+   font-family:fantasy;
+   padding: 30px;
+   text-align: center;
+   background-color:#fc6d2e;
+    
+    
+}
+
+.encabezado h1 {
+    font-size: 58px;
+     text-shadow:#ffffff 2px 3px;
+}
+
+/*barra de menu*/
+.menu{
+    width: 100%;
+    padding: 5px;
+    background-color: #ff8b57;
+    overflow: hidden;
+}
+
+/* decoracion de barra*/
+.menu a{
+    
+    float: left; 
+    color: #652007;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+  text-align: center;
+  
+}
+
+
+.menu a:hover{
+    color:#6f6f6f;
+    background-color: #b75123;
+    transition: all 0.3s ease;
+    transform: scale(1.005);
+    color: #ffffff;
+}
+.izq{
+    float: left;
+    width: 49.5%;
+    background-color: rgba(242, 163, 60, 0.38);
+    
+}
+ 
+.der{
+    float: right;
+    padding-left: 20px;
+    height: 400px;
+    background-image: url(autosuperacion.jpg);
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size:100% 100%;
+    width:49.5%;
+    
+    background-color: rgba(255, 248, 220, 0.69);
+    
+   
+}
+.video-uno{
+  
+    
+}
+/*#selected {
+    transform: scale(1.005);
+    background-color: #b75123;
+    box-shadow: 0px 0px 10px
+0px rgba (0,0,0,5);
+
+}*/
+.pie{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(134, 100, 44, 0.65);
+    text-align: center;
+    margin-top: auto;
+}
+.tex{
+    text-align: left;
+}
+@media screen and (max-width: 1000px){/*400 celular*/
+    .izq , .der{
+        width: 100%;
+        padding: 0;
+        
+    }
+}
+@media screen and (max-width: 800px){/*800 celular*/
+    .menu a {
+        float: none;
+        width: 100%;
+        
+    }
+}
