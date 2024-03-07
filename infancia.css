@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat;
+    padding: 10px; 
+    font-size:1em;
+    line-height:24px;
+    background-color: #ffdab9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+.encabezado{
+   font-family:fantasy;
+   padding: 30px;
+   text-align: center;
+   background-color:#fc6d2e;
+    
+    
+}
+/*encabezado letras*/
+.encabezado h1 {
+    font-size: 58px;
+     text-shadow:#ffffff 2px 3px;
+}
+
+/*barra de menu*/
+.menu{
+    width: 100%;
+    padding: 5px;
+    background-color: #ff8b57;
+    overflow: hidden;
+}
+
+/* decoracion de barra*/
+.menu a{
+    
+    float: left; 
+    color: #652007;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+  text-align: center;
+  
+}
+
+/* barra al cursor*/
+.menu a:hover{
+    color:#6f6f6f;
+    background-color: #b75123;
+    transition: all 0.3s ease;
+    transform: scale(1.005);
+    color: #ffffff;
+}
+/*div del texto*/
+.zi{
+    float: left;
+    width: 28%;
+    height: 200px;
+    background-image: url(granja.jpg);
+        background-repeat: no-repeat;
+     background-size:100% 100%;
+
+    background-color: rgba(242, 163, 60, 0.38);
+}
+
+.no{
+    float: right;
+    width: 70%;
+    background-color: rgba(242, 163, 60, 0.38);
+    border-bottom: 20px;
+}
+
+/*pie de pagina*/
+.pie{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(134, 100, 44, 0.65);
+    text-align: center;
+    margin-top: auto;
+}
+.tex{
+    text-align: left;
+}
+@media screen and (max-width: 1000px){/*400 celular*/
+    .zi , .no{
+        width: 100%;
+        padding: 0;
+        
+    }
+}
+@media screen and (max-width: 800px){/*800 celular*/
+    .menu a {
+        float: none;
+        width: 100%;
+        
+    }
+}
+   
